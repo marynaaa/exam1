@@ -48,12 +48,68 @@
   font-style: normal;
 }
 .header {
+  background-color: #5474fd;
+  min-height: 80px;
+}
+.header .container {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.header__logo {
+  text-transform: uppercase;
+  font-family: "josefinsans_bold";
+  font-size: 30px;
+  font-weight: 900;
+}
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.header__nav-item {
+  padding: 0 20px;
+}
+.header__nav-item:last-child {
+  padding: 0;
+}
+.header__nav-link {
+  font-family: "aleo";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.intro {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header .container {
-  width: 1100px;
+.intro .container {
+  min-width: 1100px;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,64 +123,113 @@
           align-items: center;
   color: #fff;
   font-family: "josefinsans";
-  padding: 220px 0;
+  padding: 270px 0;
 }
-.header__holder {
+.intro__holder {
   text-align: center;
   letter-spacing: 6px;
   padding-bottom: 40px;
 }
-.header__holder-title {
+.intro__holder-title {
   text-transform: uppercase;
   font-family: "josefinsans_bold";
   font-size: 42px;
   font-weight: 900;
+  padding-bottom: 20px;
 }
-.header__holder-subtitle {
+.intro__holder-subtitle {
   font-size: 20px;
   font-weight: 300;
 }
-.header__search-form {
+.intro__search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header__search-input {
-  max-width: 100%;
-  width: 450px;
-  font-size: 15px;
-  padding: 20px 0 20px 10px;
+.intro__search-input {
+  max-width: 130%;
+  width: 550px;
+  padding: 21px 0 21px 10px;
   outline: none;
+  outline: none;
+  border: 3px solid #fff;
 }
-.header__search-input::-webkit-input-placeholder {
+.intro__search-input::-webkit-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  color: #c1c1c1;
 }
-.header__search-input::-moz-placeholder {
+.intro__search-input::-moz-placeholder {
   letter-spacing: 2px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  color: #c1c1c1;
 }
-.header__search-input:-ms-input-placeholder {
+.intro__search-input:-ms-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  color: #c1c1c1;
 }
-.header__search-input::-ms-input-placeholder {
+.intro__search-input::-ms-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  color: #c1c1c1;
 }
-.header__search-input::placeholder {
+.intro__search-input::placeholder {
   letter-spacing: 2px;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
+  color: #c1c1c1;
+}
+.intro__btn-search {
+  max-width: 100%;
+  width: 160px;
+  font-family: "aleo";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #5474fd;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.intro ._icon-search {
+  position: absolute;
+  font-size: 28px;
+  padding: 0 15px 0 10px;
+  top: 412px;
+  z-index: 95;
+}
+.intro__scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 120px 0;
+}
+.intro__scroll-down {
+  font-family: "josefinsans";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  padding-bottom: 15px;
+}
+.intro ._icon-scroll_arrow {
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 8px;
+  cursor: pointer;
 }
 
 * {
@@ -221,4 +326,11 @@ h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
 }

@@ -1,57 +1,51 @@
 .header {
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #5474fd;
+    min-height: 80px;
 
     .container {
-        width: 1100px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: absolute;
         color: #fff;
-        font-family: 'josefinsans';
-        padding: 220px 0;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
-        &__holder {
-            text-align: center;
-            letter-spacing: 6px;
-            padding-bottom: 40px;
-        }
 
-        &__holder-title {
-            text-transform: uppercase;
-            font-family: 'josefinsans_bold';
-            font-size: 42px;
-            font-weight: 900;
-        }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
 
-        &__holder-subtitle {
-            font-size: 20px;
-            font-weight: 300;
-        }
+    &__logo {
+        text-transform: uppercase;
+        font-family: 'josefinsans_bold';
+        font-size: 30px;
+        font-weight: 900;
+    }
 
-        &__search-form {
-            display: flex;
-        }
-        
-        &__search-input {
-            max-width: 100%;
-            width: 450px;
-            font-size: 15px;
-            padding: 20px 0 20px 10px;
-            outline: none;
+    &__nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
 
-            &::placeholder {
-                letter-spacing: 2px;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 300;
-                color: $text-grey;
-                opacity: 0.7;
-            }
-        }
+    &__nav-item {
+        padding: 0 20px;
+    }
 
-    
+    &__nav-item:last-child {
+        padding: 0;
+    }
 
-}
+    &__nav-link {
+        font-family: 'aleo';
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}   
+
+

@@ -1,0 +1,59 @@
+.aboutus {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__flex-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__holder {
+        padding: 180px 0;
+        width: 100%;
+        font-family: 'aleo';
+    }
+
+    &__holder-title {
+        font-size: 26px;
+        font-weight: 600;
+        padding-bottom: 50px;
+        opacity: 0.8;
+    }
+
+    &__holder-text {
+        font-family: 'josefinsans';
+        line-height: 1.5;
+        opacity: 0.8;
+
+        >p {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__button {
+        background-color: #5474fd;
+        color: #fff;
+        max-width: 170px;
+        width: 100%;
+        padding: 15px 10px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    &__btn-explore {
+        font-family: 'aleo';
+        color: #fff;
+    }
+    
+    &__pictures {
+        padding: 76px 0;
+        display: flex;
+    }
+
+    &__pictures-pic2 {
+        align-self: flex-end;
+    }
+    
+}

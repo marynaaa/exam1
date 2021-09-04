@@ -1,23 +1,26 @@
 .header {
+    width: 100%;
+    position: fixed;
     background-color: #5474fd;
     min-height: 80px;
 
-    .container {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        align-items: center;
+    &__holder {
         display: flex;
         justify-content: space-between;
+        padding: 25px 0;
     }
 
     &__nav {
         display: flex;
         justify-content: space-between;
-        padding: 20px 0;
+        text-align: center;
     }
 
     &__logo {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        z-index: 2;
         text-transform: uppercase;
         font-family: 'josefinsans_bold';
         font-size: 30px;
@@ -35,16 +38,15 @@
         padding: 0 20px;
     }
 
-    &__nav-item:last-child {
-        padding: 0;
-    }
-
     &__nav-link {
         font-family: 'aleo';
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
         color: #fff;
+        font-size: 16px;
+        padding-top: 9px;
+        position: relative;
     }
 }   
 

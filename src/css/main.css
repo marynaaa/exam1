@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "aleobolditalic";
+  font-family: "aleo";
   src: url("../fonts/aleo/aleo-bolditalic-webfont-webfont.eot");
   src: url("../fonts/aleo/aleo-bolditalic-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-bolditalic-webfont-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-bolditalic-webfont-webfont.woff") format("woff"), url("../fonts/aleo/aleo-bolditalic-webfont-webfont.ttf") format("truetype");
   font-weight: normal;
@@ -27,7 +27,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "aleoregular";
+  font-family: "aleo";
   src: url("../fonts/aleo/aleo-regular-webfont-webfont.eot");
   src: url("../fonts/aleo/aleo-regular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-regular-webfont-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-regular-webfont-webfont.woff") format("woff"), url("../fonts/aleo/aleo-regular-webfont-webfont.ttf") format("truetype");
   font-weight: normal;
@@ -37,7 +37,7 @@
   font-family: "josefinsans_bold";
   src: url("../fonts/josefinsSans/josefinsans-bold-webfont.eot");
   src: url("../fonts/josefinsSans/josefinsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinsSans/josefinsans-bold-webfont.woff2") format("woff2"), url("../fonts/josefinsSans/josefinsans-bold-webfont.woff") format("woff"), url("../fonts/josefinsSans/josefinsans-bold-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
@@ -47,66 +47,10 @@
   font-weight: normal;
   font-style: normal;
 }
-.header {
-  background-color: #5474fd;
-  min-height: 80px;
-}
-.header .container {
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 0;
-}
-.header__logo {
-  text-transform: uppercase;
-  font-family: "josefinsans_bold";
-  font-size: 30px;
-  font-weight: 900;
-}
-.header__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.header__nav-item {
-  padding: 0 20px;
-}
-.header__nav-item:last-child {
-  padding: 0;
-}
-.header__nav-link {
-  font-family: "aleo";
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .intro {
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  color: #fff;
 }
 .intro .container {
   min-width: 1100px;
@@ -121,11 +65,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
-  font-family: "josefinsans";
-  padding: 270px 0;
 }
 .intro__holder {
+  padding: 270px 0;
+  font-family: "josefinsans";
+  color: #fff;
   text-align: center;
   letter-spacing: 6px;
   padding-bottom: 40px;
@@ -138,6 +82,7 @@
   padding-bottom: 20px;
 }
 .intro__holder-subtitle {
+  font-family: "josefinsans";
   font-size: 20px;
   font-weight: 300;
 }
@@ -147,8 +92,8 @@
   display: flex;
 }
 .intro__search-input {
-  max-width: 130%;
-  width: 550px;
+  max-width: 100%;
+  width: 450px;
   padding: 21px 0 21px 10px;
   outline: none;
   outline: none;
@@ -157,6 +102,7 @@
 .intro__search-input::-webkit-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
+  font-family: "josefinsans";
   font-size: 16px;
   font-weight: 300;
   color: #c1c1c1;
@@ -164,6 +110,7 @@
 .intro__search-input::-moz-placeholder {
   letter-spacing: 2px;
   text-align: center;
+  font-family: "josefinsans";
   font-size: 16px;
   font-weight: 300;
   color: #c1c1c1;
@@ -171,6 +118,7 @@
 .intro__search-input:-ms-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
+  font-family: "josefinsans";
   font-size: 16px;
   font-weight: 300;
   color: #c1c1c1;
@@ -178,6 +126,7 @@
 .intro__search-input::-ms-input-placeholder {
   letter-spacing: 2px;
   text-align: center;
+  font-family: "josefinsans";
   font-size: 16px;
   font-weight: 300;
   color: #c1c1c1;
@@ -185,6 +134,7 @@
 .intro__search-input::placeholder {
   letter-spacing: 2px;
   text-align: center;
+  font-family: "josefinsans";
   font-size: 16px;
   font-weight: 300;
   color: #c1c1c1;
@@ -215,6 +165,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   padding: 120px 0;
 }
 .intro__scroll-down {
@@ -232,9 +183,190 @@
   cursor: pointer;
 }
 
+.aboutus {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutus__flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutus__holder {
+  padding: 180px 0;
+  width: 100%;
+  font-family: "aleo";
+}
+.aboutus__holder-title {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 50px;
+  opacity: 0.8;
+}
+.aboutus__holder-text {
+  font-family: "josefinsans";
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.aboutus__holder-text > p {
+  padding-bottom: 20px;
+}
+.aboutus__button {
+  background-color: #5474fd;
+  color: #fff;
+  max-width: 170px;
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.aboutus__btn-explore {
+  font-family: "aleo";
+  color: #fff;
+}
+.aboutus__pictures {
+  padding: 76px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutus__pictures-pic2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.booknow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.booknow__col {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.booknow .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.booknow__content {
+  margin: 110px 0;
+  padding: 80px 30px;
+  background-color: #302a28;
+  opacity: 0.8;
+  -webkit-transition: backgrund-color 0.3s ease-in-out;
+  transition: backgrund-color 0.3s ease-in-out;
+  width: 45%;
+}
+.booknow__content:hover {
+  opacity: 1;
+}
+.booknow__subtitle {
+  font-family: "josefinsans";
+  font-weight: 300;
+  font-size: 14px;
+}
+.booknow__title {
+  padding: 30px 0;
+  font-family: "aleo";
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+.booknow__text {
+  font-family: "josefinsans";
+  font-size: 14px;
+  font-weight: 300px;
+  padding-bottom: 35px;
+}
+.booknow__button {
+  background-color: #5474fd;
+  max-width: 170px;
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.booknow__btn-submit {
+  color: #fff;
+  font-family: "josefinsans";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #5474fd;
+  min-height: 80px;
+}
+.header__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  z-index: 2;
+  text-transform: uppercase;
+  font-family: "josefinsans_bold";
+  font-size: 30px;
+  font-weight: 900;
+}
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.header__nav-item {
+  padding: 0 20px;
+}
+.header__nav-link {
+  font-family: "aleo";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 9px;
+  position: relative;
+}
+
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 *,
@@ -330,7 +462,7 @@ p {
 
 .container {
   margin: 0 auto;
-  width: 100%;
   max-width: 1140px;
   padding: 0 15px;
+  width: 100%;
 }

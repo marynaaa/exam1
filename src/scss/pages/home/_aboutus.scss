@@ -15,8 +15,9 @@
     }
 
     &__holder-title {
+        font-family: 'aleo';
         font-size: 26px;
-        font-weight: 600;
+        font-weight: 500;
         padding-bottom: 50px;
         opacity: 0.8;
     }
@@ -48,8 +49,14 @@
     }
     
     &__pictures {
-        padding: 76px 0;
+        padding: 100px 0;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__pictures-pic1 {
+        align-self: flex-start;
     }
 
     &__pictures-pic2 {
